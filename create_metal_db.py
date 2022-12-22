@@ -1,7 +1,9 @@
 import sqlite3
 
+# create and connect to database
 conn = sqlite3.connect('metal-archives.db')
 
+# create the table band_info
 conn.execute('''CREATE TABLE band_info
          (
          band_id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -18,4 +20,5 @@ conn.execute('''CREATE TABLE band_info
          data_retrieved DATE
          );''')
 
+# close connection to database
 conn.close()
