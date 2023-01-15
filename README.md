@@ -1,9 +1,10 @@
 # What are the predominant genres and themes in metal music and where they are most popular
 In this project we will web scrape, clean and analyse data about metal bands from all over the world. The goal is to 
 answer the following questions:
-- Which countries are most of the bands from in total numbers and by population
-- What are the most popular sub-genres and lyrical themes
+- Which countries are the most metal bands from in total numbers and by population?
+- What are the most popular sub-genres and lyrical themes?
 - Are there differences in the questions above for bands that are independent or signed to a label?
+- Are there differences in the questions above for bands from different world regions?
 
 The data we use is web scraped from Encyclopaedia Metallum: The Metal Archives (https://www.metal-archives.com/) that is 
 an online encyclopedia based upon musical artists who predominantly 
@@ -12,8 +13,11 @@ information on each band, such as a discography, logos, pictures, lyrics, line-u
 reviews. The site also provides a system for submitting bands to the archives. The website is free of advertisements and 
 is run completely independently. 
 
-The data about the country population is sourced from https://www.cia.gov/the-world-factbook and stored as CSV file 
-[worlds_popultion](/worlds_popultion).
+The data about country population is sourced from https://www.cia.gov/the-world-factbook and stored as CSV file 
+[worlds_popultion.csv](/worlds_popultion.csv).
+
+To generate a geographic heat map with python library GeoPandas a shapefile was downloaded from 
+https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-details/.
 
 ## Web scraping metal_archives.com into a SQLite database
 1. To create the SQLite database run [create_metal_db.py](/create_metal_db.py), a python script using the **Sqlite3** library. 
@@ -45,3 +49,7 @@ Additional to the highlighted libraries you also need: **string, time, request**
 
 ## Clean and analyse the web scraped data
 The process of cleaning and analysing the data is described in Jupiter notebook [analyse_metal_archives.ipynb](/analyse_metal_archives.ipynb).
+
+![Screenshot](figures/Active metal bands per 100k inhabitants (World 2022).png)
+![Screenshot](figures/Most popular lyrical themes in metal music (2022).png)
+

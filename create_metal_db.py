@@ -16,7 +16,7 @@ conn.execute('''CREATE TABLE band_info
          genre VARCHAR(100), 
          lyrical_themes VARCHAR(100), 
          current_label VARCHAR(100), 
-         years_active VARCHAR(100),
+         years_active VARCHAR(100),pip
          data_retrieved DATE
          );''')
 
