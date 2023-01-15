@@ -50,6 +50,4 @@ Additional to the highlighted libraries you also need: **string, time, request**
 ## Clean and analyse the web scraped data
 The process of cleaning and analysing the data is described in Jupiter notebook [analyse_metal_archives.ipynb](/analyse_metal_archives.ipynb).
 
-![Screenshot](figures/Active metal bands per 100k inhabitants (World 2022).png)
-![Screenshot](figures/Most popular lyrical themes in metal music (2022).png)
-
+![Active metal bands per 100k inhabitants (World 2022)](https://user-images.githubusercontent.com/121058227/212565199-ec54b3ff-fdfc-4fc7-a336-858874f3d70e.PNG)
