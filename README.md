@@ -45,7 +45,7 @@ need the **Chrome browser** and the latest version of **Chromdriver** which cont
 from the individual band websites the script uses the **Beautiful Soup** library. For further information take a look at the
 comments in the python scripts. The data in the deposited database was retrieved between 15.12.2022 - 17.12.2022.
 
-Additional to the highlighted libraries you also need: **string, time, request** and **datetime** 
+Additional to the highlighted libraries you also need: **String, Time, Request** and **Datetime** 
 
 ## Clean and analyse the web scraped data
 The process of cleaning and analysing the data is described in Jupiter notebook [analyse_metal_archives.ipynb](/analyse_metal_archives.ipynb).
